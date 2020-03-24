@@ -60,12 +60,6 @@ function App() {
         <button value={7} onClick={changeAssignment}>Use context</button>
         <button value={8} onClick={changeAssignment}>Use even more context </button>
         <button value={9} onClick={changeAssignment}>Use reducer with use context</button>
-
-        {/* Extra credit: */}
-        {/* Patterns to fetch data: https://www.robinwieruch.de/react-hooks-fetch-data */}
-        {/* Learn more about useRef and how to retrieve previous state https://blog.logrocket.com/how-to-get-previous-props-state-with-react-hooks/ */}
-        {/* Good practices https://techblog.commercetools.com/five-practical-tips-when-using-react-hooks-in-production-990a79745229 */}
-        {/* React docs on "advanced hooks" https://reactjs.org/docs/hooks-reference.html#additional-hooks */}
       </header>
       <div className="AssignmentBlock">
       {assignment === 1 && (
@@ -96,11 +90,15 @@ function App() {
       {assignment === 9 && (
         <UseReducerAndContext />
       )}
-      {assignment}
       </div>
     </div>
   );
 }
+        {/* Extra credit: */}
+        {/* Patterns to fetch data: https://www.robinwieruch.de/react-hooks-fetch-data */}
+        {/* Learn more about useRef and how to retrieve previous state https://blog.logrocket.com/how-to-get-previous-props-state-with-react-hooks/ */}
+        {/* Good practices https://techblog.commercetools.com/five-practical-tips-when-using-react-hooks-in-production-990a79745229 */}
+        {/* React docs on "advanced hooks" https://reactjs.org/docs/hooks-reference.html#additional-hooks */}
 
 export default App;
 
