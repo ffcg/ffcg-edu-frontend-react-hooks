@@ -3,7 +3,7 @@ import UseState from './Components/1-useState'
 import UseEffect from './Components/2-useEffect'
 import UseStateAndUseEffect from './Components/3-combine-useState-useEffect'
 import CustomHooks from './Components/4-custom-hooks'
-import UseStateWithUseReducer from './Components/5-useState-with-useReducer'
+import RefactorUseStateToUseReducer from './Components/5-useState-with-useReducer'
 import UseReducer from './Components/6-useReducer'
 import UseContext from './Components/7-useContext'
 import UseContext2 from './Components/8-useContext2'
@@ -55,8 +55,8 @@ function App() {
         <button value={2} onClick={changeAssignment}>Use Effect</button>
         <button value={3} onClick={changeAssignment}>Combine state and effect</button>
         <button value={4} onClick={changeAssignment}>Use custom hooks</button>
-        <button value={5} onClick={changeAssignment}>Use reducer</button>
-        <button value={6} onClick={changeAssignment}>Combine reducer and state</button>
+        <button value={5} onClick={changeAssignment}>Refactor useState to useReducer</button>
+        <button value={6} onClick={changeAssignment}>Use reducer</button>
         <button value={7} onClick={changeAssignment}>Use context</button>
         <button value={8} onClick={changeAssignment}>Use even more context </button>
         <button value={9} onClick={changeAssignment}>Use reducer with use context</button>
@@ -75,11 +75,10 @@ function App() {
         <CustomHooks />
       )}
       {assignment === 5 && (
-        <UseReducer />
-
+        <RefactorUseStateToUseReducer />  
       )}
       {assignment === 6 && (
-        <UseStateWithUseReducer />
+        <UseReducer />      
       )}
       {assignment === 7 && (
         <UseContext />

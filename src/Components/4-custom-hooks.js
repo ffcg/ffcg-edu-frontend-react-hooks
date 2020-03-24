@@ -26,10 +26,10 @@ export default function CustomHooks() {
   let [index, setIndex] = React.useState(1);
   let [pokemon, setPokemon] = React.useState(null);
 
-  // Try uncommenting the block below and check your network tab. This is why we have dependency arrays.
-  // React.useEffect(() => {
-  //   fetchPokemon(index).then(json => setPokemon(json));
-  // });
+  
+  React.useEffect(() => {
+    fetchPokemon(index).then(json => setPokemon(json));
+  }); // <-- no dependecy array, check network tab
 
   return (
     <div>
