@@ -14,7 +14,6 @@ function App() {
   const [assignment, setAssignment] = useState(0)
 
   const changeAssignment = (e) => {
-    console.log(e.target.value)
     switch (e.target.value) {
       case '1':
         setAssignment(1)
